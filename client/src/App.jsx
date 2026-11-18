@@ -1,4 +1,6 @@
-import NavBar from './components/NavBar'
+import NavBar from './components/NavBar';
+import ProjectSlider from './components/ProjectSlider';
+import Button from './components/Button';
 
 function App() {
   return (
@@ -11,7 +13,8 @@ function App() {
         <p className="occupation">Student at Pacific Lutheran University studying Computer Science, with a minor in Business Administration</p>
       </div>
       <div id="projects">
-
+        <!-- TODO: figure out why this is broken -->
+        <ProjectSlider />
       </div>
       <div id="experience">
 
