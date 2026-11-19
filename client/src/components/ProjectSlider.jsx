@@ -22,7 +22,7 @@ const projects = [
   {
     id: 3,
     image: placeholder,
-    title: 'Portfolio Website: Node.js and React',
+    title: 'Portfolio Website: React + Vite on Github Pages',
     summary: 'This is placeholder text'
   },
   {
