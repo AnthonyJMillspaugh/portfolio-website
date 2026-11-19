@@ -13,7 +13,6 @@ function App() {
         <p className="occupation">Student at Pacific Lutheran University studying Computer Science, with a minor in Business Administration</p>
       </div>
       <div id="projects">
-        <!-- TODO: figure out why this is broken -->
         <ProjectSlider />
       </div>
       <div id="experience">

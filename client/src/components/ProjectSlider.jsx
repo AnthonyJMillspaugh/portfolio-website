@@ -3,6 +3,8 @@ import placeholder from '../assets/placeholder.png';
 import COMAPCompass from '../assets/COMAP-Compass-Website.png';
 import {useState} from "react";
 
+console.log(placeholder, COMAPCompass);
+
 const projects = [
   {
     id: 1,
@@ -37,18 +39,20 @@ function ProjectSlider() {
     setCurrentIndex((prev) => prev === 0 ? projects.length - 1 : prev - 1)
   };
   const nextSlide = () => {
-    setCurrentIndex((prev) => prev === projects.length - 1 ? 0 : next + 1)
+    setCurrentIndex((prev) => prev === projects.length - 1 ? 0 : prev + 1)
   };
   const currentSlide = projects[currentIndex];
   return (
     <>
       <div>
         <img
-          src={slides[currentIndex]}
-          alt={`Slide ${currentIndex + 1}`}
+          src={currentSlide.image}
+          alt={`Project ${currentIndex + 1}`}
         />
-        <Button onClick={prevSlide()} variant="slider" children='Previous Project'/>
-        <Button onClick={nextSlide()} variant="slider" children='Next Project' />
+        <h3>{currentSlide.title}</h3>
+        <p>{currentSlide.summary}</p>
+        <Button onClick={prevSlide} variant="slider" children='Previous Project'/>
+        <Button onClick={nextSlide} variant="slider" children='Next Project' />
       </div>
     </>
   )
