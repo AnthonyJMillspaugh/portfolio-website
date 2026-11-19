@@ -1,6 +1,7 @@
 import Button from './Button';
 import placeholder from '../assets/placeholder.png';
 import COMAPCompass from '../assets/COMAP-Compass-Website.png';
+import TaskSherpLogo from '../assets/TaskSherp-logo.svg';
 import {useState} from "react";
 
 console.log(placeholder, COMAPCompass);
@@ -8,7 +9,7 @@ console.log(placeholder, COMAPCompass);
 const projects = [
   {
     id: 1,
-    image: placeholder,
+    image: TaskSherpLogo,
     title: 'Task Sherp: Kotlin Multiplatform',
     summary: 'This is placeholder text'
   },
