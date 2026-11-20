@@ -1,6 +1,7 @@
 import NavBar from './components/NavBar';
 import ProjectSlider from './components/ProjectSlider';
 import Button from './components/Button';
+import { DotPattern } from './components/dot-pattern';
 
 const copyEmail = () => {
   navigator.clipboard.writeText("ajmillspaugh3@gmail.com")
@@ -14,7 +15,22 @@ const openLinkedIn = () => {
 
 function App() {
   return (
-    <>
+    <DotPattern
+      className="min-h-screen bg-black"
+      color="rgba(20, 160, 165, 0.35)"
+      glowColor="#e8833a"
+      gap={24}
+      size={2}
+      glow={8}
+      speed={5}
+      radius={160}
+    >
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 -z-[5] h-[100vh]"
+        style={{ background: 'linear-gradient(to bottom, transparent 0%, #000 100%)' }}
+      />
+      <div className="pointer-events-none absolute inset-x-0 top-[100vh] bottom-0 -z-[5] bg-black" />
+
       <div className="header">
         <NavBar />
       </div>
@@ -48,7 +64,7 @@ function App() {
       <div className="footer">
 
       </div>
-    </>
+    </DotPattern>
   );
 }
 
