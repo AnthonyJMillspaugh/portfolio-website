@@ -3,6 +3,8 @@ import placeholder from '../assets/placeholder.png';
 import COMAPCompass from '../assets/COMAP-Compass-Website.png';
 import TaskSherpLogo from '../assets/TaskSherp-logo.svg';
 import {useState} from "react";
+import './css-files/Card.css';
+import './css-files/ProjectSlider.css';
 
 console.log(placeholder, COMAPCompass);
 
@@ -44,8 +46,8 @@ function ProjectSlider() {
   };
   const currentSlide = projects[currentIndex];
   return (
-    <>
-      <div>
+    <section className="card-grid">
+      <div className="card">
         <img
           src={currentSlide.image}
           alt={`Project ${currentIndex + 1}`}
@@ -55,7 +57,7 @@ function ProjectSlider() {
         <Button onClick={prevSlide} variant="slider" children='Previous Project'/>
         <Button onClick={nextSlide} variant="slider" children='Next Project' />
       </div>
-    </>
+    </section>
   )
 }
 

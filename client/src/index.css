@@ -1,4 +1,11 @@
 html,
 body {
   font-family: 'Geist', system-ui, sans-serif;
+  color: aliceblue;
+}
+
+:root {
+  --card: rgba(17, 17, 17, 0.7);
+  --border: rgba(255, 255, 255, 0.1);
+  --muted-foreground: #a3a3a3;
 }

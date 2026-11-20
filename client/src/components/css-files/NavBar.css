@@ -1,0 +1,9 @@
+p,
+nav {
+  display: inline-block;
+}
+
+nav {
+  position: relative;
+  left: 37%;
+}

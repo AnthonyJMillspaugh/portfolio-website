@@ -1,6 +1,7 @@
 import NavBar from './components/NavBar';
 import ProjectSlider from './components/ProjectSlider';
 import Button from './components/Button';
+import './components/css-files/Card.css';
 
 const copyEmail = () => {
   navigator.clipboard.writeText("ajmillspaugh3@gmail.com")
@@ -14,13 +15,13 @@ const openLinkedIn = () => {
 
 function App() {
   return (
-    <>
+    <div>
       <div className="header">
         <NavBar />
       </div>
-      <section className="about-section">
+      <div className="card">
         <p className="location">Tacoma, WA</p>
-        <p className="occupation">Student at Pacific Lutheran University studying Computer Science, with a minor in Business Administration</p>
+        <p className="occupation">Student @ <a href="https://www.plu.edu/" target="_blank" rel="noopener noreferrer">Pacific Lutheran University</a> studying Computer Science, with a minor in Business Administration</p>
         <p className='description'>
           I develop using Kotlin, Python, HTML/CSS/JavaScript, and Docker + MySQL, working on multiplatform applications, software development, and webpages.
           My current projects range from small applications for external hardware to larger software applications/webapps
@@ -28,11 +29,11 @@ function App() {
           combination of easy-to-use features and functionality.
         </p>
         <footer className="footer">
-          <Button onClick={copyEmail} children='Email' />
-          <Button onClick={openGitHub} children='GitHub' />
-          <Button onClick={openLinkedIn} children='LinkedIn' />
+            <Button onClick={copyEmail} children='Email'/>
+            <a className='link' href='https://github.com/AnthonyJMillspaugh' target="_blank" rel="noopener noreferrer">Github</a>
+            <a className='link' href='https://linkedin.com/in/anthony-millspaugh-240043341' target="_blank" rel="noopener noreferrer">LinkedIn </a>
         </footer>
-      </section>
+      </div>
       <div id="projects">
         <ProjectSlider />
       </div>
@@ -48,7 +49,7 @@ function App() {
       <div className="footer">
 
       </div>
-    </>
+    </div>
   );
 }
 
