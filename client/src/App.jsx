@@ -1,7 +1,7 @@
 import NavBar from './components/NavBar';
 import ProjectSlider from './components/ProjectSlider';
 import Button from './components/Button';
-import './App.css';
+import './index.css';
 
 const copyEmail = () => {
   navigator.clipboard.writeText("ajmillspaugh3@gmail.com")
