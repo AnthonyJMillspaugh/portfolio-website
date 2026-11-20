@@ -22,10 +22,10 @@ function App() {
         <p className="location">Tacoma, WA</p>
         <p className="occupation">Student at Pacific Lutheran University studying Computer Science, with a minor in Business Administration</p>
         <p className='description'>
-          I develop using Kotlin, Python, and JavaScript, working on multiplatform applications, software development, and webpages.
-          My projects current projects range from small applications for external hardware to larger software applications/webapps
+          I develop using Kotlin, Python, HTML/CSS/JavaScript, and Docker + MySQL, working on multiplatform applications, software development, and webpages.
+          My current projects range from small applications for external hardware to larger software applications/webapps
           designed to be easy to use and highly capable across multiple platforms. I focus on delivering clean applications with a
-          combination of ease-of-use and functionality.
+          combination of easy-to-use features and functionality.
         </p>
         <footer className="footer">
           <Button onClick={copyEmail} children='Email' />
