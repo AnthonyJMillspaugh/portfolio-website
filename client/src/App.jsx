@@ -1,6 +1,7 @@
 import NavBar from './components/NavBar';
 import ProjectSlider from './components/ProjectSlider';
 import Button from './components/Button';
+import BinaryBackground from "./components/BinaryBackground.jsx";
 import './index.css';
 
 const copyEmail = () => {
@@ -15,7 +16,8 @@ const openLinkedIn = () => {
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <BinaryBackground />
       <div className="header">
         <NavBar />
       </div>
@@ -49,7 +51,7 @@ function App() {
       <div className="footer">
 
       </div>
-    </div>
+    </>
   );
 }
 
