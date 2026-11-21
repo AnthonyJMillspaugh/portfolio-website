@@ -2,7 +2,9 @@ import NavBar from './components/NavBar';
 import ProjectSlider from './components/ProjectSlider';
 import Button from './components/Button';
 import ExperienceDeck from './components/ExperienceDeck';
+import TechStack from './components/TechStack';
 import './components/css-files/Card.css';
+import './App.css';
 
 const copyEmail = () => {
   navigator.clipboard.writeText("ajmillspaugh3@gmail.com")
@@ -41,8 +43,8 @@ function App() {
       <div className='card' id="experience">
         <ExperienceDeck />
       </div>
-      <div id="tech-stack">
-
+      <div className='card' id="tech-stack">
+        <TechStack />
       </div>
       <div id="contact">
 
