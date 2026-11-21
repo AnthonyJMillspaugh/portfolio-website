@@ -13,9 +13,9 @@ const copyEmail = () => {
 function App() {
   return (
     <div>
-      <div className="header">
+      <header className="header">
         <NavBar />
-      </div>
+      </header>
       <div className="card" id="about">
         <p className="occupation">Student @ <a href="https://www.plu.edu/" target="_blank" rel="noopener noreferrer">Pacific Lutheran University</a> studying Computer Science, with a minor in Business Administration</p>
         <p className='description'>
@@ -42,9 +42,10 @@ function App() {
       <div className='card' id="contact">
         <Contact />
       </div>
-      <div className="footer">
-
-      </div>
+      <footer className="footer card">
+        <p className="footer-name">Anthony Joseph Millspaugh</p>
+        <p className="note">Not much to see here :P</p>
+      </footer>
     </div>
   );
 }
