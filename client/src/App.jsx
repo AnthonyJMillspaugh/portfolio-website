@@ -3,19 +3,13 @@ import ProjectSlider from './components/ProjectSlider';
 import Button from './components/Button';
 import ExperienceDeck from './components/ExperienceDeck';
 import TechStack from './components/TechStack';
+import Contact from './components/Contact';
 import './components/css-files/Card.css';
 import './App.css';
 
 const copyEmail = () => {
   navigator.clipboard.writeText("ajmillspaugh3@gmail.com")
 };
-const openGitHub = () => {
-  window.open('https://github.com/AnthonyJMillspaugh', '_blank', 'noopener,noreferrer');
-}
-const openLinkedIn = () => {
-  window.open('https://linkedin.com/in/anthony-millspaugh-240043341', '_blank', 'noopener,noreferrer');
-}
-
 function App() {
   return (
     <div>
@@ -45,8 +39,8 @@ function App() {
       <div className='card' id="tech-stack">
         <TechStack />
       </div>
-      <div id="contact">
-
+      <div className='card' id="contact">
+        <Contact />
       </div>
       <div className="footer">
 
