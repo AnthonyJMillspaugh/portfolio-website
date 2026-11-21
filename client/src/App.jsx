@@ -23,7 +23,6 @@ function App() {
         <NavBar />
       </div>
       <div className="card" id="about">
-        <p className="location">Tacoma, WA</p>
         <p className="occupation">Student @ <a href="https://www.plu.edu/" target="_blank" rel="noopener noreferrer">Pacific Lutheran University</a> studying Computer Science, with a minor in Business Administration</p>
         <p className='description'>
           I develop using Kotlin, Python, HTML/CSS/JavaScript, and Docker + MySQL, working on multiplatform applications, software development, and webpages.

@@ -48,6 +48,7 @@ function ProjectSlider() {
   return (
     <section className="card-grid">
       <div className="card">
+        <h3>Projects</h3>
         <img
           src={currentSlide.image}
           alt={`Project ${currentIndex + 1}`}

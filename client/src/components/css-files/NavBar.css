@@ -1,9 +1,17 @@
-p,
-nav {
-  display: inline-block;
+header {
+
 }
 
-nav {
-  position: relative;
-  left: 37%;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.name {
+  flex: 0 0 4rem;
+}
+.location {
+  display: flex;
 }

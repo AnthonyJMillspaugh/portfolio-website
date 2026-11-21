@@ -3,9 +3,10 @@ import './css-files/NavBar.css';
 
 function NavBar() {
   return (
-    <header className="header">
-      <div className="card">
+    <header>
+      <div className="card header">
         <p className="name">Anthony Millspaugh</p>
+        <p className="location">Tacoma, WA</p>
 
         <nav className="navbar">
           <a href="#projects">Projects</a>

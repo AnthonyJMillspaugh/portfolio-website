@@ -6,6 +6,7 @@ const ExperienceInfo = [
   {
     id: 1,
     image: placeholder,
+    alt: 'placeholder',
     job_title: "None :(",
     company: "None yet! You could be the first though!",
     timeframe: "Never"
@@ -15,14 +16,17 @@ const ExperienceInfo = [
 function ExperienceDeck() {
   return (
     <>
-      <div className="experience">
-        <img src={ExperienceInfo[0].image} alt="placeholder" />
-        <div className="experience-info">
-          <p className='title'>{ExperienceInfo[0].job_title}</p>
-          <p className='company'>{ExperienceInfo[0].company}</p>
+      <h3>Experience</h3>
+      {ExperienceInfo.map((row) => (
+        <div className="experience" key={row.id}>
+          <img src={row.image} alt={row.alt} />
+          <div className="experience-info">
+            <p className='title'>{row.job_title}</p>
+            <p className='company'>{row.company}</p>
+          </div>
+          <p className='time'>{row.timeframe}</p>
         </div>
-        <p className='time'>{ExperienceInfo[0].timeframe}</p>
-      </div>
+      ))}
     </>
   );
 }
