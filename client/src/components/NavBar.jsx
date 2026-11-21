@@ -3,18 +3,18 @@ import './css-files/NavBar.css';
 
 function NavBar() {
   return (
-    <header>
-      <div className="card header">
+    <header className="card header">
+      <div className="name-location">
         <p className="name">Anthony Millspaugh</p>
         <p className="location">Tacoma, WA</p>
-
-        <nav className="navbar">
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-          <a href="#technologies">Technologies</a>
-        </nav>
       </div>
+
+      <nav className="navbar">
+        <a className='word-link' href="#projects">Projects</a>
+        <a className='word-link' href="#experience">Experience</a>
+        <a className='word-link' href="#contact">Contact</a>
+        <a className='word-link' href="#tech-stack">Technologies</a>
+      </nav>
     </header>
   );
 }

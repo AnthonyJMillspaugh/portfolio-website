@@ -7,18 +7,21 @@ import Contact from './components/Contact';
 import WalkingFooter from "./components/WalkingFooter.jsx";
 import './components/css-files/Card.css';
 import './App.css';
+import useReveal from './functions/useReveal.js';
+
 
 
 const copyEmail = () => {
   navigator.clipboard.writeText("ajmillspaugh3@gmail.com")
 };
 function App() {
+  useReveal();
   return (
     <div>
-      <header className="header">
+      <header className="header reveal">
         <NavBar />
       </header>
-      <div className="card" id="about">
+      <div className="card reveal about">
         <p className="occupation">Student @ <a href="https://www.plu.edu/" target="_blank" rel="noopener noreferrer">Pacific Lutheran University</a> studying Computer Science, with a minor in Business Administration</p>
         <p className='description'>
           I develop using Kotlin, Python, HTML/CSS/JavaScript, and Docker + MySQL, working on multiplatform applications, software development, and webpages.
@@ -32,19 +35,19 @@ function App() {
             <a className='link' href='https://linkedin.com/in/anthony-millspaugh-240043341' target="_blank" rel="noopener noreferrer">LinkedIn </a>
         </footer>
       </div>
-      <div id="projects">
+      <div className='reveal' id="projects">
         <ProjectSlider />
       </div>
-      <div className='card' id="experience">
+      <div className='card reveal' id="experience">
         <ExperienceDeck />
       </div>
-      <div className='card' id="tech-stack">
+      <div className='card reveal' id="tech-stack">
         <TechStack />
       </div>
-      <div className='card' id="contact">
+      <div className='card reveal' id="contact">
         <Contact />
       </div>
-      <div className="footer card">
+      <div className="footer card reveal">
         <p className="footer-name">Anthony Joseph Millspaugh</p>
         <p className="note">Not much to see here :P</p>
       </div>
