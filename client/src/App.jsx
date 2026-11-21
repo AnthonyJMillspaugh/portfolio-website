@@ -1,6 +1,7 @@
 import NavBar from './components/NavBar';
 import ProjectSlider from './components/ProjectSlider';
 import Button from './components/Button';
+import ExperienceDeck from './components/ExperienceDeck';
 import './components/css-files/Card.css';
 
 const copyEmail = () => {
@@ -19,7 +20,7 @@ function App() {
       <div className="header">
         <NavBar />
       </div>
-      <div className="card">
+      <div className="card" id="about">
         <p className="location">Tacoma, WA</p>
         <p className="occupation">Student @ <a href="https://www.plu.edu/" target="_blank" rel="noopener noreferrer">Pacific Lutheran University</a> studying Computer Science, with a minor in Business Administration</p>
         <p className='description'>
@@ -37,8 +38,8 @@ function App() {
       <div id="projects">
         <ProjectSlider />
       </div>
-      <div id="experience">
-
+      <div className='card' id="experience">
+        <ExperienceDeck />
       </div>
       <div id="tech-stack">
 
