@@ -7,6 +7,7 @@ import WalkingFooter from "./components/WalkingFooter.jsx";
 import './components/css-files/Card.css';
 import './App.css';
 import useReveal from './functions/useReveal.js';
+import {FiMail, FiGithub, FiLinkedin} from 'react-icons/fi';
 
 const copyEmail = () => {
   navigator.clipboard.writeText("ajmillspaugh3@gmail.com")
@@ -20,7 +21,7 @@ function App() {
         <NavBar />
       </header>
       <div className="card reveal about">
-        <p className="occupation">Student @ <a href="https://www.plu.edu/" target="_blank" rel="noopener noreferrer">Pacific Lutheran University</a> studying Computer Science, with a minor in Business Administration</p>
+        <p className="occupation">Junior @ <a className='school-link' href="https://www.plu.edu/" target="_blank" rel="noopener noreferrer">Pacific Lutheran University</a> studying Computer Science, with a minor in Business Administration</p>
         <p className='description'>
           I develop using Kotlin, Python, HTML/CSS/JavaScript, and Docker + MySQL, working on multiplatform applications, software development, and webpages.
           My current projects range from small configuration applications for external hardware to larger software applications/webapps
@@ -28,12 +29,12 @@ function App() {
           combination of easy-to-use features and functionality.
         </p>
         <footer className="about-footer">
-            <a className='email' href='#' onClick={(e) => {
+            <a className='email-about' href='#' onClick={(e) => {
               e.preventDefault();
               copyEmail();
-            }}>Email</a>
-            <a className='link' href='https://github.com/AnthonyJMillspaugh' target="_blank" rel="noopener noreferrer">Github</a>
-            <a className='link' href='https://linkedin.com/in/anthony-millspaugh-240043341' target="_blank" rel="noopener noreferrer">LinkedIn </a>
+            }}>Email<FiMail /></a>
+            <a className='link-about' href='https://github.com/AnthonyJMillspaugh' target="_blank" rel="noopener noreferrer">Github<FiGithub /></a>
+            <a className='link-about' href='https://linkedin.com/in/anthony-millspaugh-240043341' target="_blank" rel="noopener noreferrer">LinkedIn<FiLinkedin /></a>
         </footer>
       </div>
       <div className='card reveal' id="projects">

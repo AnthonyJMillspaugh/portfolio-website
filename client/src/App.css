@@ -4,6 +4,20 @@
   gap: 1rem;
 }
 
+.email-about,
+.link-about {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.school-link {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
 .about-footer {
   display: flex;
   flex-direction: row;
