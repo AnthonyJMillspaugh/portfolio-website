@@ -1,9 +1,8 @@
-import './css-files/Card.css';
 import './css-files/NavBar.css';
 
 function NavBar() {
   return (
-    <header className="card header">
+    <header className="header">
       <div className="name-location">
         <p className="name">Anthony Millspaugh</p>
         <p className="location">Tacoma, WA</p>

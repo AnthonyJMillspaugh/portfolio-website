@@ -1,6 +1,5 @@
 import placeholder from '../assets/placeholder.png';
 import './css-files/ExperienceDeck.css';
-import './css-files/Card.css';
 
 const ExperienceInfo = [
   {

@@ -1,6 +1,5 @@
 import NavBar from './components/NavBar';
 import ProjectSlider from './components/ProjectSlider';
-import Button from './components/Button';
 import ExperienceDeck from './components/ExperienceDeck';
 import TechStack from './components/TechStack';
 import Contact from './components/Contact';
@@ -9,16 +8,15 @@ import './components/css-files/Card.css';
 import './App.css';
 import useReveal from './functions/useReveal.js';
 
-
-
 const copyEmail = () => {
   navigator.clipboard.writeText("ajmillspaugh3@gmail.com")
 };
 function App() {
   useReveal();
   return (
-    <div>
-      <header className="header reveal">
+    <div className="App">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <header className="header reveal card">
         <NavBar />
       </header>
       <div className="card reveal about">
@@ -38,7 +36,7 @@ function App() {
             <a className='link' href='https://linkedin.com/in/anthony-millspaugh-240043341' target="_blank" rel="noopener noreferrer">LinkedIn </a>
         </footer>
       </div>
-      <div className='reveal' id="projects">
+      <div className='card reveal' id="projects">
         <ProjectSlider />
       </div>
       <div className='card reveal' id="experience">
