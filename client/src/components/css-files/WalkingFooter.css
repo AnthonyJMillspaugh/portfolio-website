@@ -1,0 +1,36 @@
+.walker-footer {
+  position: relative;
+  height: 72px;
+  margin-top: 3rem;
+  overflow: hidden;
+}
+
+.walker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  background-size: 512px 64px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  animation:
+    step 0.8s steps(8) infinite,
+    walk-across 20s linear infinite;
+}
+
+@keyframes step {
+  to { background-position-x: -512px; }
+}
+
+@keyframes walk-across {
+  from { left: -70px; }
+  to   { left: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .walker {
+    animation: none;
+    left: calc(50% - 32px);
+  }
+}

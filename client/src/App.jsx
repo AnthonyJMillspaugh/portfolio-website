@@ -4,8 +4,10 @@ import Button from './components/Button';
 import ExperienceDeck from './components/ExperienceDeck';
 import TechStack from './components/TechStack';
 import Contact from './components/Contact';
+import WalkingFooter from "./components/WalkingFooter.jsx";
 import './components/css-files/Card.css';
 import './App.css';
+
 
 const copyEmail = () => {
   navigator.clipboard.writeText("ajmillspaugh3@gmail.com")
@@ -42,9 +44,12 @@ function App() {
       <div className='card' id="contact">
         <Contact />
       </div>
-      <footer className="footer card">
+      <div className="footer card">
         <p className="footer-name">Anthony Joseph Millspaugh</p>
         <p className="note">Not much to see here :P</p>
+      </div>
+      <footer>
+        <WalkingFooter />
       </footer>
     </div>
   );
