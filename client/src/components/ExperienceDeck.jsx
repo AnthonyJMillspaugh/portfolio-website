@@ -1,10 +1,10 @@
-import placeholder from '../assets/placeholder.png';
+import shrug from '../assets/shrug-img.jpg';
 import './css-files/ExperienceDeck.css';
 
 const ExperienceInfo = [
   {
     id: 1,
-    image: placeholder,
+    image: shrug,
     alt: 'placeholder',
     job_title: "None :(",
     company: "None yet! You could be the first though!",

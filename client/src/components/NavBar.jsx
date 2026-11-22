@@ -1,11 +1,12 @@
 import './css-files/NavBar.css';
+import {FiMapPin} from "react-icons/fi";
 
 function NavBar() {
   return (
     <header className="header">
       <div className="name-location">
         <p className="name">Anthony Joseph Millspaugh</p>
-        <p className="location">Tacoma, WA</p>
+        <p className="location"><FiMapPin />Tacoma, WA</p>
       </div>
 
       <nav className="navbar">

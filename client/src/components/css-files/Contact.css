@@ -3,3 +3,10 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+
+.email-container,
+.email-copy {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+}

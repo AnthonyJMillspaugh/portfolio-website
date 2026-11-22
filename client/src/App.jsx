@@ -10,7 +10,7 @@ import useReveal from './functions/useReveal.js';
 import {FiMail, FiGithub, FiLinkedin} from 'react-icons/fi';
 
 const copyEmail = () => {
-  navigator.clipboard.writeText("ajmillspaugh3@gmail.com")
+  navigator.clipboard.writeText("amillspaugh@plu.edu")
 };
 function App() {
   useReveal();
