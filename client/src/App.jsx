@@ -4,19 +4,32 @@ import ExperienceDeck from './components/ExperienceDeck';
 import TechStack from './components/TechStack';
 import Contact from './components/Contact';
 import WalkingFooter from "./components/WalkingFooter.jsx";
+import Button from './components/Button';
 import './components/css-files/Card.css';
 import './App.css';
 import useReveal from './functions/useReveal.js';
-import {FiMail, FiGithub, FiLinkedin} from 'react-icons/fi';
+import projects from './data/projectArray.js';
+import {FiMail, FiGithub, FiLinkedin, FiArrowLeft, FiArrowRight} from 'react-icons/fi';
+import {useState} from "react";
 
 const copyEmail = () => {
   navigator.clipboard.writeText("amillspaugh@plu.edu")
 };
+
 function App() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const prevSlide = () => {
+    setCurrentIndex((prev) => prev === 0 ? projects.length - 1 : prev - 1)
+  };
+  const nextSlide = () => {
+    setCurrentIndex((prev) => prev === projects.length - 1 ? 0 : prev + 1)
+  };
+  const currentSlide = projects[currentIndex];
+
   useReveal();
+
   return (
     <div className="App">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <header className="header reveal card">
         <NavBar />
       </header>
@@ -38,7 +51,11 @@ function App() {
         </footer>
       </div>
       <div className='card reveal' id="projects">
-        <ProjectSlider />
+        <ProjectSlider currentIndex={currentIndex} />
+      </div>
+      <div className='slider-buttons'>
+        <Button className='button card reveal' onClick={prevSlide} children={FiArrowLeft()} />
+        <Button className='button card reveal' onClick={nextSlide} children={FiArrowRight()} />
       </div>
       <div className='card reveal' id="experience">
         <ExperienceDeck />

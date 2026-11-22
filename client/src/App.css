@@ -62,3 +62,15 @@
     transition: none;
   }
 }
+
+.button {
+  display: flex;
+  align-content: center;
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+.slider-buttons {
+  display: flex;
+  flex-direction: row;
+}
