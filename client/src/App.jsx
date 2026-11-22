@@ -9,7 +9,7 @@ import './components/css-files/Card.css';
 import './App.css';
 import useReveal from './functions/useReveal.js';
 import projects from './data/projectArray.js';
-import {FiMail, FiGithub, FiLinkedin, FiArrowLeft, FiArrowRight} from 'react-icons/fi';
+import {FiCopy, FiGithub, FiLinkedin, FiArrowLeft, FiArrowRight} from 'react-icons/fi';
 import {useState} from "react";
 
 const copyEmail = () => {
@@ -18,13 +18,15 @@ const copyEmail = () => {
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState(-1);
   const prevSlide = () => {
+    setDirection(1);
     setCurrentIndex((prev) => prev === 0 ? projects.length - 1 : prev - 1)
   };
   const nextSlide = () => {
+    setDirection(-1)
     setCurrentIndex((prev) => prev === projects.length - 1 ? 0 : prev + 1)
   };
-  const currentSlide = projects[currentIndex];
 
   useReveal();
 
@@ -45,13 +47,14 @@ function App() {
             <a className='email-about' href='#' onClick={(e) => {
               e.preventDefault();
               copyEmail();
-            }}>Email<FiMail /></a>
+              alert("Email copied!");
+            }}>Email<FiCopy /></a>
             <a className='link-about' href='https://github.com/AnthonyJMillspaugh' target="_blank" rel="noopener noreferrer">Github<FiGithub /></a>
             <a className='link-about' href='https://linkedin.com/in/anthony-millspaugh-240043341' target="_blank" rel="noopener noreferrer">LinkedIn<FiLinkedin /></a>
         </footer>
       </div>
       <div className='card reveal' id="projects">
-        <ProjectSlider currentIndex={currentIndex} />
+        <ProjectSlider direction={direction} currentIndex={currentIndex} />
       </div>
       <div className='slider-buttons'>
         <Button className='button card reveal' onClick={prevSlide} children={FiArrowLeft()} />
