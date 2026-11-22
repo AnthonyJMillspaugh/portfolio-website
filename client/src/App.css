@@ -73,4 +73,5 @@
 .slider-buttons {
   display: flex;
   flex-direction: row;
+  max-width: 700px;
 }
