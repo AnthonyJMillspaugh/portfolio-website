@@ -65,7 +65,8 @@
 
 .button {
   display: flex;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
   color: aliceblue;
   font-size: 2rem;
 }
@@ -75,5 +76,17 @@
   flex-direction: row;
   justify-self: center;
   max-width: 700px;
-  gap: 15rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.linkedin {
+  flex: 1;
+}
+
+.resume {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  translate: 0 0.4rem;
 }

@@ -9,7 +9,7 @@ import './components/css-files/Card.css';
 import './App.css';
 import useReveal from './functions/useReveal.js';
 import projects from './data/projectArray.js';
-import {FiCopy, FiGithub, FiLinkedin, FiArrowLeft, FiArrowRight} from 'react-icons/fi';
+import {FiCopy, FiGithub, FiLinkedin, FiArrowLeft, FiArrowRight, FiFileText} from 'react-icons/fi';
 import {useState} from "react";
 
 const copyEmail = () => {
@@ -49,8 +49,9 @@ function App() {
               copyEmail();
               alert("Email copied!");
             }}>Email<FiCopy /></a>
-            <a className='link-about' href='https://github.com/AnthonyJMillspaugh' target="_blank" rel="noopener noreferrer">Github<FiGithub /></a>
-            <a className='link-about' href='https://linkedin.com/in/anthony-millspaugh-240043341' target="_blank" rel="noopener noreferrer">LinkedIn<FiLinkedin /></a>
+          <a className='link-about' href='https://github.com/AnthonyJMillspaugh' target="_blank" rel="noopener noreferrer">Github<FiGithub /></a>
+          <a className='link-about linkedin' href='https://linkedin.com/in/anthony-millspaugh-240043341' target="_blank" rel="noopener noreferrer">LinkedIn<FiLinkedin /></a>
+          <a className='resume custom-card' href='/Anthony-Millspaugh-Resume.pdf' target="_blank" rel="noopener noreferrer"><FiFileText />Resume</a>
         </footer>
       </div>
       <div className='card reveal' id="projects">

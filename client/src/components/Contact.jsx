@@ -17,7 +17,7 @@ function Contact() {
           alert("Email copied!")
         }}><FiCopy />here</a> to copy</p>
       </div>
-      <a className='linkedin link-about' href='https://linkedin.com/in/anthony-millspaugh-240043341'><FiLinkedin />LinkedIn</a>
+      <a className='link-about' href='https://linkedin.com/in/anthony-millspaugh-240043341'><FiLinkedin />LinkedIn</a>
     </div>
   );
 }

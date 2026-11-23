@@ -15,12 +15,10 @@
   margin-top: 50px;
 }
 
+.custom-card,
 .card:hover {
   transform: translateY(-4px);
   border-color: rgba(255, 255, 255, 0.2);
-  box-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.06) inset,
-    0 18px 40px rgba(0, 0, 0, 0.55);
 }
 
 .card h3 {
@@ -34,6 +32,17 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .custom-card,
   .card { transition: none; }
+  .custom-card,
   .card:hover { transform: none; }
+}
+
+.custom-card {
+  position: relative;
+  padding: 0.25rem;
+  border-radius: 7px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
