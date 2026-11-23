@@ -2,7 +2,7 @@
  
 Personal portfolio website built with React and Vite, showcasing my projects, experience, and tech stack.
  
-**Live site:** https://YOUR-DOMAIN-HERE
+**Live site:** https://tonymillspaugh.com
  
 ![Portfolio screenshot](./client/src/assets/portfolio-website.png)
  
