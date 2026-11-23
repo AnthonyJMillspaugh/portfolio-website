@@ -91,3 +91,13 @@
   align-items: center;
   translate: 0 0.4rem;
 }
+
+@media (max-width: 500px) {
+  .about-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
