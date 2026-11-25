@@ -1,8 +1,8 @@
-# Anthony Millspaugh | Portfolio
+# Anthony Joseph Millspaugh | Portfolio
  
 Personal portfolio website built with React and Vite, showcasing my projects, experience, and tech stack.
  
-**Live site:** https://YOUR-DOMAIN-HERE
+**Live site:** https://tonymillspaugh.com
  
 ![Portfolio screenshot](./client/src/assets/portfolio-website.png)
  
@@ -10,7 +10,7 @@ Personal portfolio website built with React and Vite, showcasing my projects, ex
  
 - Animated project slider with directional slide and fade transitions
 - Sections that fade in as you scroll to them
-- Tinted cards over a layered, gradient background
+- Interactive, tinted cards over a layered, gradient background
 - Sprite-sheet animated hiker walking across the footer
 - Responsive layout for desktop and mobile
 - Copy-to-clipboard email button and icon links
@@ -19,7 +19,7 @@ Personal portfolio website built with React and Vite, showcasing my projects, ex
 - [React](https://react.dev/) and [Vite](https://vite.dev/)
 - [motion](https://motion.dev/) for slide animations
 - [react-icons](https://react-icons.github.io/react-icons/) for icons
-- Plain CSS, one stylesheet per component
+- CSS
 - GitHub Pages and Actions for hosting and deployment
  
 The app lives in the `client` folder.
