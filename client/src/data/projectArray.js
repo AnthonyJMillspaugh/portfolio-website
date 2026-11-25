@@ -1,12 +1,13 @@
 import placeholder from '../assets/placeholder.png';
 import COMAPCompass from '../assets/COMAP-Compass-Website.png';
-import TaskSherpLogo from '../assets/TaskSherp-logo.svg';
+import TaskSherpBanner from '../assets/TaskSherp Banner.png';
 import PortfolioWebsite from '../assets/portfolio-website.png';
+import LightEasyBanner from '../assets/LightEasy Banner.png';
 
 const projects = [
   {
     id: 1,
-    image: TaskSherpLogo,
+    image: TaskSherpBanner,
     title: 'Task Sherp: Task Management App',
     summary: 'A multiplatform, multifunctional task management app built using Kotlin Multiplatform.' +
       ' Designed to help you stay on track with a highly customizable task sorting and reminder system, ' +
@@ -31,7 +32,7 @@ const projects = [
   },
   {
     id: 4,
-    image: placeholder,
+    image: LightEasyBanner,
     title: "LightEasy: Light Configuration Program",
     summary: 'LightEasy is a simple Python program for configuring lights in a model greenhouse. Intended for a group of engineering students' +
       ' attending University of Washington: Tacoma to use for their final project, but will work for anyone using similar hardware.',
